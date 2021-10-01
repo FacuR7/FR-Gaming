@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.fondo {
+  background-image: linear-gradient(to bottom, rgba(39, 2, 65, 0.712), rgba(0, 23, 73, 0.726));
+  width: 100%;
+  height: 100%; }
+
+header {
+  background-color: rgba(192, 192, 192, 0.521);
+  height: 150px;
+  width: 100%;
+  position: fixed;
+  top: 1px;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  header .header__Logo {
+    width: 140px;
+    height: 140px; }
+  header .header__botones li {
+    display: inline;
+    width: 60%;
+    font-size: 30px;
+    color: #fafafa;
+    padding-right: 70px;
+    padding-left: 30px;
+    transition: all 1.5s; }
+  header .header__botones li:hover {
+    background-color: rgba(255, 255, 255, 0.411); }
+  header .header__botones a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Impact;
+    padding-top: 5%; }
+
+.fondoImagen {
+  width: 100%;
+  height: 1080px; }
+
+#lema {
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Impact;
+  font-size: 75px;
+  z-index: 1;
+  bottom: 35%;
+  left: 30%; }
+
+footer {
+  background-color: #474747;
+  display: flex;
+  justify-content: flex-start; }
+  footer .footer__Logo {
+    width: 300px;
+    height: 300px; }
+  footer .footer__texto {
+    color: #2995c7;
+    padding-top: 10px; }
+
+.grad {
+  background-image: linear-gradient(to bottom, rgba(39, 2, 65, 0.712), rgba(0, 23, 73, 0.726));
+  width: 100%;
+  height: 100%; }
+  .grad .grad__TextoAbout {
+    margin-top: 170px;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .grad .grad__Subtitulo {
+    background-color: #353535;
+    color: #2995c7;
+    font-family: Impact;
+    font-size: 60px;
+    width: 100%;
+    padding-left: 10%; }
+  .grad .grad__textoContacto {
+    height: 900px;
+    width: 100%;
+    margin-top: 170px;
+    border-top: 5px #2995c7;
+    border-right: 5px #2995c7;
+    border-left: 5px #2995c7;
+    border-bottom: 5px #2995c7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-left: 10px; }
+  .grad .textoContacto__titulo {
+    background-color: #353535;
+    color: #2995c7;
+    font-family: impact;
+    font-size: 60px;
+    width: 100%;
+    padding-left: 0%; }
+
+.contenido {
+  width: 100%;
+  margin-top: 170px;
+  height: 1900px; }
+  .contenido .contenido__Texto {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 130px 600px;
+    grid-template-areas: "Subtitulo Subtitulo" "Parrafo Foto";
+    align-content: center;
+    grid-row-gap: 30px; }
+  .contenido .contenido__Subtitulo {
+    background-color: #353535;
+    color: #2995c7;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 65px;
+    grid-area: Subtitulo;
+    text-align: center; }
+  .contenido .contenido__Foto {
+    width: 400px;
+    height: 600px;
+    grid-area: Foto;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 20px; }
+  .contenido .contenido__Parrafo {
+    grid-area: Parrafo;
+    justify-self: center;
+    font-size: 32px;
+    color: white; }
+
+#carouselExampleIndicators, .carousel {
+  padding-top: 170px; }
+
+.textoTrabajos {
+  width: 80%;
+  margin-top: 170px; }
+  .textoTrabajos .textoTrabajos__sub {
+    height: 80px;
+    background-color: #353535;
+    color: #2995c7;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 65px;
+    grid-area: Subtitulo;
+    text-align: center; }
+  .textoTrabajos .textoTrabajos__grilla {
+    height: 1400px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "PC1 PC2 PC3 PC4" "PC5 PC6 PC7 PC8" "PC9 PC10 PC11 PC12" "PC13 PC14 PC15 PC16";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    align-content: center; }
+  .textoTrabajos .textoTrabajos__img {
+    width: 300px;
+    height: 300px;
+    align-self: center;
+    justify-self: center; }
